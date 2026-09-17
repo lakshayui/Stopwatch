@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Counter</title>
+<title>Stopwatch</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-700 flex items-center justify-center h-full m-0 px-6">
     <article class="bg-white flex flex-col items-center gap-6 p-10 border rounded-[10px] w-full max-w-sm">
-        <h1 class="text-2xl font-bold">Counter</h1>
+        <h1 class="text-2xl font-bold">Stopwatch</h1>
 
-        <div id="countDisplay" class="text-5xl font-bold">0</div>
+        <div id="timeDisplay" class="text-5xl font-bold font-mono">00:00</div>
 
-        <div class="flex gap-4">
-            <button id="decreaseBtn" type="button" class="w-14 h-14 text-2xl font-bold border rounded bg-slate-200 hover:bg-slate-300">−</button>
-            <button id="resetBtn" type="button" class="px-4 h-14 text-sm font-semibold border rounded bg-slate-100 hover:bg-slate-200">Reset</button>
-            <button id="increaseBtn" type="button" class="w-14 h-14 text-2xl font-bold border rounded bg-slate-200 hover:bg-slate-300">+</button>
+        <div class="flex gap-3">
+            <button id="startBtn" type="button" class="px-4 py-2 border rounded bg-green-100 hover:bg-green-200 font-semibold">Start</button>
+            <button id="stopBtn" type="button" class="px-4 py-2 border rounded bg-red-100 hover:bg-red-200 font-semibold">Stop</button>
+            <button id="resetBtn" type="button" class="px-4 py-2 border rounded bg-slate-100 hover:bg-slate-200 font-semibold">Reset</button>
         </div>
     </article>
 
